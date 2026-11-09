@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Master Sapiens Â· Miniserie de animaciÃ³n para adultos</title>
+<meta content="Master Sapiens: miniserie de animaciÃ³n para adultos. Desarrollo visual, trabajo en curso." name="description"/>
+<!-- Asks search engines not to list the page. It does NOT restrict access. Remove this line to allow indexing. -->
+<meta content="noindex, nofollow" name="robots"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Source+Sans+3:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--blue:#00828f;--grey:#595959;--ink:#2b2b2b;--line:#e3e3e3;--maxw:1100px;--fit:calc(100vh - 8rem)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Source Sans 3',system-ui,sans-serif;font-size:1.0625rem;line-height:1.65;color:var(--grey);background:#fff}
+h1,h2,h3{font-family:'EB Garamond',Georgia,serif;font-weight:400;color:var(--blue);line-height:1.2;margin:0 0 .6rem}
+h2{font-size:2rem} h3{font-size:1.45rem}
+p{margin:0 0 1rem}
+a{color:var(--blue)}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+ul{list-style:none;margin:0;padding:0}
+.review-banner{display:none}
+.review .review-banner{display:block;background:#fff3b0;color:#5a4a00;text-align:center;font-size:.85rem;padding:.35rem 1rem}
+.tbc{display:none}
+.review .tbc{display:revert;background:#fff3b0;color:#5a4a00;padding:0 .25rem}
+.review div.tbc{display:block;background:none}
+.site-header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.bar{max-width:var(--maxw);margin:0 auto;padding:.7rem 1.25rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem}
+.bar-right{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.4rem}
+.brand{font-family:'EB Garamond',Georgia,serif;font-size:1.6rem;color:var(--blue);text-decoration:none}
+[role=tablist]{display:flex;flex-wrap:wrap;gap:.1rem .9rem}
+[role=tab]{font:inherit;font-size:.98rem;color:var(--grey);background:none;border:0;border-bottom:2px solid transparent;padding:.35rem .1rem;cursor:pointer}
+[role=tab]:hover{color:var(--blue)}
+[role=tab][aria-selected=true]{color:var(--blue);border-bottom-color:var(--blue);font-weight:600}
+[role=tab]:focus-visible{outline:1px solid var(--blue);outline-offset:2px}
+.fs{font:inherit;font-size:.85rem;color:var(--grey);background:#fff;border:1px solid var(--line);padding:.28rem .7rem;cursor:pointer}
+.fs:hover{color:var(--blue);border-color:var(--blue)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+main{max-width:1360px;margin:0 auto;padding:2rem 1.25rem 3rem}
+[role=tabpanel]{max-width:var(--maxw);margin-left:auto;margin-right:auto}
+#storyboard{max-width:1360px}
+[role=tabpanel][hidden]{display:none}
+.hero{position:relative;background:#111;width:min(100%,calc(var(--fit) * 1600 / 1135));margin:0 auto}
+.hero .art{width:100%}
+.hero .title{position:absolute;left:50%;bottom:5%;transform:translateX(-50%);width:62%;pointer-events:none}
+.descriptor{font-family:'EB Garamond',Georgia,serif;font-size:1.5rem;color:var(--blue);text-align:center;margin:1.6rem 0 .3rem}
+.credit{text-align:center;font-size:.95rem;margin:0}
+.thesis{font-family:'EB Garamond',Georgia,serif;font-size:1.75rem;line-height:1.35;color:var(--ink);text-align:center;max-width:780px;margin:2.5rem auto}
+.thesis em{color:var(--blue);font-style:italic}
+.lead{max-width:720px;margin:0 auto 1rem;text-align:center}
+.credits{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem 2rem;margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.credits img{width:150px}
+.split{display:grid;grid-template-columns:1fr 1.5fr;gap:2.5rem;align-items:center;margin:0 0 3.5rem}
+.split.rev{grid-template-columns:1.5fr 1fr}
+.split.rev>:first-child{order:2}
+.split.text-only{display:block;max-width:720px;margin:0 auto 3.5rem;text-align:center}
+.split figure img,.char figure img{width:auto;height:auto;max-width:100%;max-height:var(--fit);margin:0 auto}
+.genre{text-align:center;font-family:'EB Garamond',Georgia,serif;font-size:1.25rem;color:var(--ink);margin:0}
+.char{display:grid;grid-template-columns:1fr 2fr;gap:2.5rem;align-items:center;margin:0 0 3.5rem}
+.char .tag{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--ink);font-size:1.15rem}
+.gallery-title{margin:3rem 0 1.2rem;padding-top:2rem;border-top:1px solid var(--line)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.2rem}
+.gallery li{aspect-ratio:4/3;background:#f5f5f3;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.gallery img{width:auto;height:auto;max-width:100%;max-height:100%}
+.eps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2.2rem 1.6rem}
+.ep-img{aspect-ratio:16/9;overflow:hidden;background:#111;margin-bottom:.8rem}
+.ep-img img{width:100%;height:100%;object-fit:cover}
+.ep-num{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .15rem}
+.sb-intro{text-align:center;margin-bottom:2rem}
+.sb{display:grid;grid-template-columns:minmax(0,412px) minmax(0,1fr);gap:2rem;align-items:start}
+.sb-start{position:sticky;top:5rem}
+.sb-frames{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.sb img{width:auto;max-width:100%;height:auto;border:1px solid #cfcfcf;background:#fff}
+.sb-end{margin-top:2rem}
+.universe{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem;--emb-h:270px;margin-top:2rem}
+.universe article{text-align:center}
+.emb{height:var(--emb-h);display:flex;align-items:center;justify-content:center;margin-bottom:1.3rem}
+.emb img{height:100%;width:auto;max-width:100%}
+.universe p{max-width:480px;margin-left:auto;margin-right:auto}
+.universe h3 span{display:block;font-family:'Source Sans 3',sans-serif;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);margin-bottom:.2rem}
+.universe-intro{text-align:center;max-width:720px;margin:0 auto}
+.contact{max-width:640px;margin:0 auto;text-align:center}
+.contact img{width:260px;margin:0 auto 1.6rem}
+.btn{display:inline-block;border:1px solid var(--blue);color:var(--blue);padding:.55rem 1.3rem;text-decoration:none;margin-top:1rem}
+.btn.is-disabled{border-color:#c9c9c9;color:#9a9a9a;cursor:default;pointer-events:none}
+.cred-block{max-width:640px;margin:3rem auto 0;padding-top:2rem;border-top:1px solid var(--line);text-align:center}
+.cred-block h2{font-size:1.6rem}
+.cred-block dl{margin:0}
+.cred-block dt{font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;margin-top:1rem}
+.cred-block dd{margin:0;color:var(--ink)}
+.site-footer{border-top:1px solid var(--line);padding:1.5rem 1.25rem 2rem;text-align:center;font-size:.9rem}
+.site-footer p{margin:.15rem 0}
+.zoom{cursor:zoom-in}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;padding:1.5rem;z-index:50;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:100%;width:auto;height:auto}
+@media (max-width:900px){
+ .split,.split.rev,.char{grid-template-columns:1fr;gap:1.2rem}
+ .split.rev>:first-child{order:0}
+ .sb{grid-template-columns:1fr}
+ .sb-start{position:static}
+ .hero .title{width:80%}
+}
+@media (max-width:700px){.universe{grid-template-columns:1fr}}
+@media (max-width:520px){.sb-frames{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.descriptor .approx{font-size:.7em;color:var(--grey)}
+.cred-block dd span{white-space:nowrap}
+.site-footer .legal{font-size:.8rem;margin-top:.5rem}
+
+.lang-switch{display:flex;gap:.4rem;align-items:center;font-size:.85rem;white-space:nowrap}
+.lang-switch [aria-current]{font-weight:600;text-decoration:none}
+</style>
+</head>
+<!-- PUBLIC VERSION (V_05). For the review view use <body class="review">. -->
+<body>
+<div class="review-banner">VersiÃ³n ES Â· RevisiÃ³n. No distribuir. Los elementos resaltados estÃ¡n pendientes de confirmaciÃ³n.</div>
+<header class="site-header">
+<div class="bar">
+<a class="brand" href="#series">Master Sapiens</a>
+<div class="bar-right">
+<nav aria-label="Secciones">
+<div role="tablist">
+<button aria-controls="series" id="tab-series" role="tab">Serie</button>
+<button aria-controls="world" id="tab-world" role="tab">Mundo</button>
+<button aria-controls="characters" id="tab-characters" role="tab">Personajes</button>
+<button aria-controls="episodes" id="tab-episodes" role="tab">Episodios</button>
+<button aria-controls="storyboard" id="tab-storyboard" role="tab">Storyboard</button>
+<button aria-controls="universe" id="tab-universe" role="tab">Universo</button>
+<button aria-controls="contact" id="tab-contact" role="tab">Contacto</button>
+</div>
+</nav>
+<button class="fs" id="fs" title="Pantalla completa" type="button">Pantalla completa</button>
+<nav aria-label="Idioma" class="lang-switch"><a href="../" hreflang="en" lang="en">EN</a><a aria-current="page" href="./" hreflang="es" lang="es">ES</a></nav></div>
+</div>
+</header>
+<main>
+<!-- 1 Â· SERIES -->
+<section aria-labelledby="tab-series" id="series" role="tabpanel">
+<div class="hero">
+<img alt="Arte conceptual: una figura pÃ¡lida en una escalera de biblioteca se disuelve en bloques pixelados entre las estanterÃ­as." class="art" height="1135" src="../images/art_ep2_library_edit.jpg" width="1600"/>
+<img alt="Master Sapiens" class="title" height="1311" src="../images/brand_title_calligraphy.png" width="2339"/>
+</div>
+<p class="descriptor">Miniserie de animaciÃ³n para adultos Â· 5 episodios de 18 minutos <span class="approx">(aprox.)</span></p>
+<p class="credit">Concepto y guion originales de David Alonso</p>
+<p class="thesis">La historia no es un monumento para contemplar. Es un archivo biolÃ³gico que explotar para diseÃ±ar un <em>Â«futuro perfectoÂ».</em></p>
+<p class="lead">Londres, 1890. En una abadÃ­a gÃ³tica aislada, el Club del Conocimiento protege el saber humano frente al colapso del tiempo. Entonces la realidad empieza a cambiar.</p>
+<p class="lead">DetrÃ¡s de la anomalÃ­a estÃ¡n los Master Sapiens: seres asimilados del futuro, liderados por Buffon D., que cruzan el tiempo para extraer el talento de las grandes mentes de la historia.</p>
+<div class="credits">
+<p class="credit">ProducciÃ³n ejecutiva y animaciÃ³n: 12 PingÃ¼inos</p>
+<img alt="Logotipo de 12 PingÃ¼inos Animation Studio" height="2454" loading="lazy" src="../images/brand_logo_12pinguinos.png" width="5231"/>
+</div>
+</section>
+<!-- 2 Â· WORLD -->
+<section aria-labelledby="tab-world" hidden="" id="world" role="tabpanel">
+<div class="split">
+<div><h2>El Club del Conocimiento</h2><p>Envuelta en la niebla invernal de Londres, una abadÃ­a desolada de hierro y cristal se alza como un inmenso invernadero victoriano: mitad biblioteca, mitad jardÃ­n botÃ¡nico.</p></div>
+<figure><img alt="Arte conceptual: un hombre lee un documento ante una ventana gÃ³tica mientras unas figuras encapuchadas permanecen en la niebla." class="zoom" height="1135" loading="lazy" src="../images/art_ep1_reading_window.jpg" width="1600"/></figure>
+</div>
+<div class="split rev">
+<div><h2>Edita</h2><p>La amenaza no invade: edita. La madera se aplana, la piedra se vuelve cÃ³digo, la arquitectura se pliega sobre sÃ­ misma.</p></div>
+<figure><img alt="Arte conceptual: una figura pÃ¡lida en una escalera de biblioteca se disuelve en bloques pixelados entre las estanterÃ­as." class="zoom" height="1135" loading="lazy" src="../images/art_ep2_library_edit.jpg" width="1600"/></figure>
+</div>
+<div class="split text-only">
+<h2>Por quÃ© 2D</h2>
+<p>AnimaciÃ³n 2D para adultos. LÃ­nea clara minimalista, con raÃ­ces en el cÃ³mic de autor europeo.<br/>A lo largo de seis etapas de degradaciÃ³n, el espacio victoriano se transforma en un diagrama de datos bidimensional.</p>
+</div>
+<div class="split">
+<div><h2>Azul Algoritmo</h2><p>Bronce, madera, hollÃ­n y grises frÃ­os se encuentran con un azul plano e hipnÃ³tico: la seÃ±al de extracciÃ³n y asimilaciÃ³n.</p></div>
+<figure><img alt="DiseÃ±o de atrezo: el Generador, el reloj de fluidos y el brazalete de extracciÃ³n." class="zoom" height="900" loading="lazy" src="../images/design_generator_props.jpg" width="1600"/></figure>
+</div>
+<p class="genre">Thriller de ciencia ficciÃ³n Â· Biopunk Â· Terror psicolÃ³gico</p>
+</section>
+<!-- 3 Â· CHARACTERS -->
+<section aria-labelledby="tab-characters" hidden="" id="characters" role="tabpanel">
+<div class="char">
+<div><h2>H. G. Wells</h2><p class="tag">La brÃºjula moral de la serie, no un testigo inocente.</p><p>Custodio de la mÃ¡quina del tiempo y de la convicciÃ³n de que el conocimiento debe preservarse, no extraerse.</p></div>
+<figure><img alt="Hoja de diseÃ±o de personaje: H. G. Wells." class="zoom" height="1131" loading="lazy" src="../images/design_wells_sheet.jpg" width="1600"/></figure>
+</div>
+<div class="char">
+<div><h2>Buffon D.</h2><p class="tag">Cruzan el tiempo para extraer conocimiento, no para preservarlo.</p><p>Antiguo fundador del Club del Conocimiento, lidera a los Master Sapiens a travÃ©s del tiempo.</p></div>
+<figure><img alt="Hoja de diseÃ±o de personaje: Buffon D." class="zoom" height="1135" loading="lazy" src="../images/design_buffon_sheet.jpg" width="1600"/></figure>
+</div>
+<div class="char">
+<div><h2>Master Sapiens</h2><p>Seres asimilados del futuro. La extracciÃ³n y la asimilaciÃ³n vuelven la amenaza hacia dentro: los ClÃ©rigos del Saber se convierten en Master Sapiens.</p></div>
+<figure><img alt="Hoja de diseÃ±o de personajes: los Master Sapiens." class="zoom" height="900" loading="lazy" src="../images/design_mastersapiens_sheet.jpg" width="1600"/></figure>
+</div>
+<h2 class="gallery-title">Desarrollo de diseÃ±o</h2>
+<ul class="gallery"><li><img alt="Bocetos exploratorios de personajes y atrezo (1 de 3)." class="zoom" height="1188" loading="lazy" src="../images/design_outline_sketches_01.jpg" width="1600"/></li><li><img alt="Bocetos exploratorios de personajes y atrezo (2 de 3)." class="zoom" height="1823" loading="lazy" src="../images/design_outline_sketches_02.jpg" width="1600"/></li><li><img alt="Bocetos exploratorios de personajes y atrezo (3 de 3)." class="zoom" height="1095" loading="lazy" src="../images/design_outline_sketches_03.jpg" width="1600"/></li><li><img alt="DiseÃ±o de atrezo: el Generador, el reloj de fluidos y el brazalete de extracciÃ³n." class="zoom" height="900" loading="lazy" src="../images/design_generator_props.jpg" width="1600"/></li><li><img alt="DiseÃ±o de atrezo: bocetos exploratorios de maquinaria." class="zoom" height="1131" loading="lazy" src="../images/design_machinery_organ.jpg" width="1600"/></li></ul>
+</section>
+<!-- 4 Â· EPISODES -->
+<section aria-labelledby="tab-episodes" hidden="" id="episodes" role="tabpanel">
+<h2>Cinco episodios</h2>
+<div class="eps"><article class="ep"><div class="ep-img"><img alt="Arte conceptual del episodio 1: un hombre lee ante una ventana gÃ³tica mientras unas figuras encapuchadas permanecen en la niebla." class="zoom" height="1135" loading="lazy" src="../images/art_ep1_reading_window.jpg" width="1600"/></div><p class="ep-num">Episodio 1</p><h3>El Generador</h3><p>El ClÃ©rigo X desaparece. Con la niebla llegan objetos imposibles del futuro.</p></article><article class="ep"><div class="ep-img"><img alt="Arte conceptual del episodio 2: una figura pÃ¡lida en una escalera de biblioteca se disuelve en bloques pixelados." class="zoom" height="1135" loading="lazy" src="../images/art_ep2_library_edit.jpg" width="1600"/></div><p class="ep-num">Episodio 2</p><h3>La anomalÃ­a</h3><p>El tiempo se congela dentro de la abadÃ­a. Una unidad de los Master Sapiens aparece entre las estanterÃ­as.</p></article><article class="ep"><div class="ep-img"><img alt="Arte conceptual del episodio 3, en rojo: una figura en una escalera de caracol y otra silueta en lo alto." class="zoom" height="852" loading="lazy" src="../images/art_ep3_staircase_red.jpg" width="1600"/></div><p class="ep-num">Episodio 3</p><h3>El laberinto</h3><p>La abadÃ­a es editada en silencio. Una seÃ±al se pierde en la niebla.</p></article><article class="ep"><div class="ep-img"><img alt="Arte conceptual del episodio 4: Voto 157." class="zoom" height="900" loading="lazy" src="../images/art_ep4_vote157.jpg" width="1600"/></div><p class="ep-num">Episodio 4</p><h3>Voto 157</h3><p>Un debate sobre la culpa compartida mientras la biblioteca se convierte en una trampa de informaciÃ³n.</p></article><article class="ep"><div class="ep-img"><img alt="Arte conceptual del episodio 5, en rojo: un hombre escribe ante un escritorio y una figura permanece en una puerta a su espalda." class="zoom" height="850" loading="lazy" src="../images/art_ep5_desk_red.jpg" width="1600"/></div><p class="ep-num">Episodio 5</p><h3>El Ãšltimo Legajo</h3><p>Bajo tierra, Wells resiste.</p></article></div>
+</section>
+<!-- 5 Â· STORYBOARD -->
+<section aria-labelledby="tab-storyboard" hidden="" id="storyboard" role="tabpanel">
+<div class="sb-intro"><h2>Secuencia de apertura â€” Desarrollo del storyboard</h2></div>
+<div class="sb">
+<figure class="sb-start"><img alt="LÃ¡mina inicial del storyboard: la abadÃ­a y, debajo, el laboratorio." height="607" loading="lazy" src="../images/sb_start_plate.png" width="412"/></figure>
+<div>
+<ul class="sb-frames"><li><img alt="ViÃ±eta del storyboard 1 de 15" height="235" loading="lazy" src="../images/sb_v01.png" width="418"/></li><li><img alt="ViÃ±eta del storyboard 2 de 15" height="235" loading="lazy" src="../images/sb_v02.png" width="418"/></li><li><img alt="ViÃ±eta del storyboard 3 de 15" height="222" loading="lazy" src="../images/sb_v03.png" width="390"/></li><li><img alt="ViÃ±eta del storyboard 4 de 15" height="234" loading="lazy" src="../images/sb_v04.png" width="411"/></li><li><img alt="ViÃ±eta del storyboard 5 de 15" height="230" loading="lazy" src="../images/sb_v05.png" width="413"/></li><li><img alt="ViÃ±eta del storyboard 6 de 15" height="239" loading="lazy" src="../images/sb_v06.png" width="416"/></li><li><img alt="ViÃ±eta del storyboard 7 de 15" height="236" loading="lazy" src="../images/sb_v07.png" width="416"/></li><li><img alt="ViÃ±eta del storyboard 8 de 15" height="222" loading="lazy" src="../images/sb_v08.png" width="394"/></li><li><img alt="ViÃ±eta del storyboard 9 de 15" height="235" loading="lazy" src="../images/sb_v09.png" width="418"/></li><li><img alt="ViÃ±eta del storyboard 10 de 15" height="236" loading="lazy" src="../images/sb_v10.png" width="419"/></li><li><img alt="ViÃ±eta del storyboard 11 de 15" height="234" loading="lazy" src="../images/sb_v11.png" width="417"/></li><li><img alt="ViÃ±eta del storyboard 12 de 15" height="236" loading="lazy" src="../images/sb_v12.png" width="416"/></li><li><img alt="ViÃ±eta del storyboard 13 de 15" height="233" loading="lazy" src="../images/sb_v13.png" width="415"/></li><li><img alt="ViÃ±eta del storyboard 14 de 15" height="235" loading="lazy" src="../images/sb_v14.png" width="416"/></li><li><img alt="ViÃ±eta del storyboard 15 de 15" height="234" loading="lazy" src="../images/sb_v15.png" width="416"/></li></ul>
+<figure class="sb-end"><img alt="LÃ¡mina final del storyboard: una figura atrapada entre engranajes." height="607" loading="lazy" src="../images/sb_end_plate.png" width="318"/></figure>
+</div>
+</div>
+</section>
+<!-- 6 Â· UNIVERSE -->
+<section aria-labelledby="tab-universe" hidden="" id="universe" role="tabpanel">
+<div class="universe-intro">
+<h2>Un universo mÃ¡s allÃ¡ de la serie</h2>
+<p>Master Sapiens se concibe como un universo narrativo. Dos obras complementarias comparten su cronologÃ­a y su lenguaje visual.</p>
+</div>
+<div class="universe">
+<article>
+<div class="emb"><img alt="Emblema de la novela El manuscrito de 2027." height="1600" loading="lazy" src="../images/univ_novel_emblem.jpg" width="1600"/></div>
+<h3><span>Novela hÃ­brida</span>El manuscrito de 2027</h3>
+<p>Madrid, 2027. Una genetista recibe un documento del siglo XIX firmado por H. G. Wells. Su investigaciÃ³n descubre una tecnologÃ­a de extracciÃ³n del talento histÃ³rico con siglos de antigÃ¼edad. FicciÃ³n, ensayo y Â«LegajosÂ» en un solo volumen.</p>
+</article>
+<article>
+<div class="emb"><img alt="Emblema del Ã¡lbum grÃ¡fico El mapa de la cronocolonizaciÃ³n." height="872" loading="lazy" src="../images/univ_album_emblem.jpg" width="1600"/></div>
+<h3><span>Ãlbum grÃ¡fico</span>El mapa de la cronocolonizaciÃ³n</h3>
+<p>En paralelo, los Master Sapiens actÃºan contra cinco nodos del conocimiento humano: Hipatia, PlatÃ³n, Ibn al-Haytham, Sor Juana InÃ©s y Marie Curie. Una cronologÃ­a de hechos narrada a travÃ©s de unas 60 pÃ¡ginas de secuencias de imÃ¡genes bidimensionales.</p>
+</article>
+</div>
+</section>
+<!-- 7 Â· CONTACT -->
+<section aria-labelledby="tab-contact" hidden="" id="contact" role="tabpanel">
+<div class="contact">
+<img alt="Logotipo de 12 PingÃ¼inos Animation Studio" height="2454" loading="lazy" src="../images/brand_logo_12pinguinos.png" width="5231"/>
+<p><strong>12 PingÃ¼inos Animation Studio</strong><br/>ProducciÃ³n ejecutiva y animaciÃ³n</p>
+<p><strong>David Alonso</strong><br/>Concepto original, direcciÃ³n y guion</p>
+<p><a href="mailto:sirgo@12pinguinos.com">sirgo@12pinguinos.com</a><br/><a href="mailto:dvalonso@gmail.com">dvalonso@gmail.com</a></p>
+<!-- Deck button: links to deck/MasterSapiens_Deck_EN.pdf -->
+<a class="btn" href="../deck/MasterSapiens_Deck_ES.pdf" rel="noopener" target="_blank">PresentaciÃ³n (PDF)</a>
+</div>
+<div class="cred-block">
+<h2>CrÃ©ditos</h2>
+<!-- Items marked class="tbc" are hidden in the public version and highlighted in the review version. -->
+<dl>
+<div><dt>Concepto original, direcciÃ³n y guion</dt><dd>David Alonso</dd></div>
+<div><dt>ProducciÃ³n ejecutiva</dt><dd>Fran Villalobos</dd></div>
+<div><dt>Productor y director de animaciÃ³n</dt><dd>Manuel Sirgo</dd></div>
+<div><dt>Arte conceptual</dt><dd><span>Andrea QuiÃ±ones Silva</span> Â· <span>Sara Arias Barahona</span> Â· <span>Ness CQ</span> Â· <span>Andrea Pascual Valriveras (Bloodbbat)</span></dd></div>
+<div><dt>Storyboard</dt><dd>Andrea QuiÃ±ones Silva</dd></div>
+</dl>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<p>Desarrollo visual â€” trabajo en curso</p>
+<p class="legal">Â© 2026 Master Sapiens. Todos los derechos reservados.</p>
+</footer>
+<div aria-label="Imagen ampliada" aria-modal="true" class="lb" id="lb" role="dialog"><img alt=""/></div>
+<script>
+(function(){
+ var tabs=Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+ var panels=Array.prototype.slice.call(document.querySelectorAll('[role="tabpanel"]'));
+ function activate(id,push){
+  if(!panels.some(function(p){return p.id===id;})) id=panels[0].id;
+  tabs.forEach(function(t){
+   var on=t.getAttribute('aria-controls')===id;
+   t.setAttribute('aria-selected',on?'true':'false');
+   t.tabIndex=on?0:-1;
+  });
+  panels.forEach(function(p){p.hidden=(p.id!==id);});
+  if(push) history.replaceState(null,'','#'+id);
+  window.scrollTo(0,0);
+ }
+ tabs.forEach(function(t,i){
+  t.addEventListener('click',function(){activate(t.getAttribute('aria-controls'),true);});
+  t.addEventListener('keydown',function(e){
+   if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+    var n=(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
+    tabs[n].focus(); tabs[n].click();
+   }
+  });
+ });
+ document.querySelector('.brand').addEventListener('click',function(e){e.preventDefault();activate('series',true);});
+ window.addEventListener('hashchange',function(){activate(location.hash.slice(1),false);});
+ activate(location.hash.slice(1)||panels[0].id,false);
+
+ var fs=document.getElementById('fs');
+ if(!document.fullscreenEnabled){fs.hidden=true;}
+ else{
+  fs.addEventListener('click',function(){
+   if(document.fullscreenElement){document.exitFullscreen();}
+   else{document.documentElement.requestFullscreen();}
+  });
+  document.addEventListener('fullscreenchange',function(){
+   fs.textContent=document.fullscreenElement?'Salir de pantalla completa':'Pantalla completa';
+  });
+ }
+
+ var lb=document.getElementById('lb'), lbImg=lb.querySelector('img');
+ document.addEventListener('click',function(e){
+  var t=e.target;
+  if(t.classList&&t.classList.contains('zoom')){lbImg.src=t.src;lbImg.alt=t.alt;lb.classList.add('open');}
+  else if(lb.classList.contains('open')){lb.classList.remove('open');}
+ });
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open');});
+})();
+</script>
+</body>
+</html>
